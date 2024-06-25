@@ -2,7 +2,7 @@ with
 
 source as (
 
-    -- Usando a macro dbt_utils.union_relations para combinar as tabelas raw_orders_2023 e raw_orders_2024
+-- Usando a macro dbt_utils.union_relations para combinar as tabelas raw_orders_2023 e raw_orders_2024
     {{ dbt_utils.union_relations(
         relations=[
             source('ecom', 'raw_orders_2023'),
